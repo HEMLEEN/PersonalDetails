@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Personal DataBase</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Loader-img.gif" type="image/x-icon">
+
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+    <script src="//code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+    <script src="//cdn.datatables.net/buttons/1.6.2/js/buttons.print.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4b7d357472.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+
+</head>
+
+<body id="loading">
+    <header>
+
+        <h1>Personal Database</h1>
+        <br>
+    </header>
+    <div class="container">
+        <div class="bg-success">
+
+            <div class="input-group" !important style="padding:12px;">
+                <div class="form-outline" style="text-align:end">
+                    <input id="search-focus" type="search" name="search" id="form1" class="form-control" />
+
+                </div>
+                <button type="button" id="Search_demo" class="btn btn-primary" onclick="search_table()">
+                    search
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="row" style="padding: 5px;">
+            <div class="col-md-12 text-right">
+
+                <input type="button" id="btnAdd" class="btn btn-primary para" value="Add New" />
+            </div>
+
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-md-12 col-sm-12 col-12 p-2 ">
+                <table id="tblData" class="table table-dark table-striped">
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>City</th>
+                            <th>Mobile</th>
+                            <th>Email</th>
+
+                            <th class="tdaction">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+                <input type="button" id="export_el" value="Export All Data" class="btn btn-primary btn-mid"
+                    onclick="fnExport('file text', 'myfilename.txt', 'text/plain')" />
+                <input type="button" id="delete_el" value="Delete All Data" class="btn btn-danger btn-mid"
+                    onclick="fnRemove()" />
+                <input type="file" id="myfile" class="btn btn-info btn-sm" style="width:25%;" name="myfile">
+
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <div class="loader-container" style="margin: 0 8px;">
+        <img src="img/loader-img.gif" style="width: 10%; height: 15%;" alt=" by Hemleen">
+        <h6 style="font-family: Trattatello, fantasy; color: #021f1f; font-weight: 500">by Hemleen </h6>
+        <!-- <img src="img/walk.gif" style="width: 10%; height: 15%;" alt=" by Hemleen"> -->
+
+    </div>
+
+    <footer>
+        <h1>copyright 2022@hemleen</h1>
+    </footer>
+</body>
+
+</html>

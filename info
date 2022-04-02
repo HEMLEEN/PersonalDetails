@@ -1,0 +1,6 @@
+<input type='submit' id='demo' class='form-control txtID' placeholder='Enter ID'/>"
+
+"<select class='form-control txtID'><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option><option>1</option></select>";
+
+<<option>Ariyalur</option>
+<option>Chennai</option>

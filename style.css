@@ -1,0 +1,129 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #0d0d0e;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: auto;
+  background-color: #012424;
+  height: 95px;
+  position: relative;
+  align-items: flex-end;
+}
+
+header h1,
+p {
+  color: azure;
+  text-align: center;
+  padding: 16px;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+footer {
+  width: auto;
+  background-color: #012424;
+  height: 95px;
+  position: relative;
+  align-items: flex-end;
+}
+footer h1 {
+  color: azure;
+  text-align: center;
+  padding: 18px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#searchDiv {
+  padding: 12px;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 1rem 2rem;
+  }
+}
+.bg-success {
+  background-color: #b2beb6 t;
+}
+.container {
+  background-color: azure;
+}
+.tdaction {
+  width: 15%;
+}
+
+.tdSr {
+  width: 7%;
+}
+#select_el {
+  -webkit-border-radius: 5px;
+  padding: 2px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 40px;
+  width: 200px;
+  color: white;
+}
+.odd {
+  background-color: #ccffeb;
+}
+.even {
+  background: #99ffd6;
+}
+
+/* loader -img style  */
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 110%;
+  z-index: 10000;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-container.active {
+  display: none;
+}
+
+.loader-container img {
+  height: 7rem;
+  color: var(--cyan);
+  text-transform: capitalize;
+}
